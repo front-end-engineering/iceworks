@@ -94,7 +94,7 @@ export default ({
     setIsCreating(true);
     let pageIndexPath = '';
     try {
-      const result = await callService('page', 'createPage', {
+      const result = await callService('page', 'create', {
         ...selectedPage,
         pageName: values.pageName,
         templateData,

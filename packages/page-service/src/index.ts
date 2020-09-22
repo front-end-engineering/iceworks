@@ -125,7 +125,7 @@ export const getTemplateSchema = async (selectPage: IMaterialPage) => {
   }
 };
 
-export const createPage = async (selectPage: IMaterialPage) => {
+export const create = async (selectPage: IMaterialPage) => {
   const templateTempDir: string = path.join(pagesPath, '.template');
   try {
     await bulkDownloadMaterials([selectPage], templateTempDir);
